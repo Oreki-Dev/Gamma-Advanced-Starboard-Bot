@@ -22,8 +22,8 @@ module.exports = class GammaClient extends Client {
     this.embeds = new Embeds(this);
     this.logger = new Logger(this);
     this.pagination = new Pagination(this);
-    this.config = require("../Assets/Json/config");
-    this.emotes = require("../Assets/Json/emotes");
+    this.config = require("../Assets/config");
+    this.emotes = require("../Assets/emotes");
     this.db = new Database(this.config.mongo);
 
     this.bootTime = null;
